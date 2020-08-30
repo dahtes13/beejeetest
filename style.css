@@ -1,0 +1,223 @@
+/* Task table */
+
+#task-head > div {
+    border-bottom: 0px;
+    background: #eeeeee;
+    font-weight: bold;
+}
+
+#task-head {
+    width: 100%;
+    display: table;
+}
+
+#task-head > div, .task-string > div {
+    display: table-cell;
+    vertical-align: top;
+    border: 1px solid #cccccc;
+    border-right: 0px;
+    border-bottom: 0px;
+    width: 25%;
+    text-align: center;
+}
+
+#task-head > div:last-child, .task-string > div:last-child{
+    border-right: 1px solid #cccccc;
+}
+
+.task-string {
+    width: 100%;
+    display: table;
+}
+
+#task-content .task-string:last-child > div {
+    border-bottom: 1px solid #cccccc;
+}
+
+.status > span {
+    color: #dc3545;
+}
+
+.change {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.change:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Page navigator */
+
+#page-navigator {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    list-style: none;
+}
+
+#page-navigator > li {
+    display: inline-block;
+    list-style: none;
+}
+
+#page-navigator > li.current {
+    font-weight: bold;
+}
+
+
+
+/* Footer */
+
+#main-footer {
+    margin-top: 24px;
+}
+
+#main-footer > div {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#add-task, #logout, #autorization {
+    width: 150px;
+    border: 1px solid #000000;
+    text-align: center;
+    line-height: 32px;
+}
+
+#logout, #autorization {
+    float: right;
+}
+
+#logout a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+}
+
+#add-task:hover, #logout a:hover, #autorization:hover {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Modal form */
+
+.modal-form {
+	border-radius: 10px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	display: none;
+    opacity: 0;
+    z-index: 5;
+}
+
+#modal-form-login {
+    width: 320px;
+    height: 160px;
+    margin-top: -80px;
+    margin-left: -160px;
+}
+
+#modal-form-add-task {
+    width: 320px;
+    height: 301px;
+    margin-top: -150.5px;
+    margin-left: -160px;
+}
+
+#modal-form-edit-task {
+    width: 320px;
+    height: 333px;
+    margin-top: -166.5px;
+    margin-left: -160px;
+}
+
+.close-modal-form {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin: 5px 5px 5px 0px;
+}
+
+.close-modal-form:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: #007bff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.close-modal-form:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: #007bff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.modal-form-body {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-textfield > input {
+    width: 100%;
+    border: 1px solid #343a40;
+}
+
+.form-textfield {
+    margin: 0 0 15px 0;
+}
+
+.form-textarea > textarea {
+    resize: none;
+    width: 290px;
+}
+
+.form-textarea {
+    margin-bottom: 9px;
+}
+
+.form-submit > input {
+    border: 0px;
+    background: #007bff;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+#overlay {
+    z-index: 3;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
